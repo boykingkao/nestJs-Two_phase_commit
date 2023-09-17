@@ -1,0 +1,35 @@
+version: "3.7"
+services:
+  # service1:
+  #   container_name: service1
+  #   build:
+  #     context: ./service_1
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - "3000:3000"
+
+  # service2:
+  #   container_name: service2
+  #   build:
+  #     context: ./service_2
+  #     dockerfile: Dockerfile
+  #   ports:
+  #     - "3001:3001"
+
+  db_1:
+    container_name: db_1
+    image: mysql:5.7
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: DBservice1
+
+  db_2:
+    container_name: db_2
+    image: mysql:5.7
+    ports:
+      - "3307:3307"
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: DBservice2
