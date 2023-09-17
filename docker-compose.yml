@@ -25,7 +25,7 @@ services:
     command: --port=3306
     environment:
       MYSQL_ROOT_PASSWORD: root
-      # MYSQL_DATABASE: DBservice1
+      MYSQL_DATABASE: DBservice1
       MYSQL_USER: user
       MYSQL_PASSWORD: user
 
@@ -38,6 +38,6 @@ services:
     command: --port=3307
     environment:
       MYSQL_ROOT_PASSWORD: root
-      # MYSQL_DATABASE: DBservice2
+      MYSQL_DATABASE: DBservice2
       MYSQL_USER: user
       MYSQL_PASSWORD: user
